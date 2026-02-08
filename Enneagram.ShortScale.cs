@@ -27,97 +27,97 @@ file static class Assessment
     private static readonly Dictionary<EnneagramType, int> _typeScores = [];
 
     // RHETI-style assessment question bank (core motivation oriented, 8 questions per type, 72 total questions)
-    private static readonly List<AssessmentQuestion> _questions =
+    private static readonly List<Question> _questions =
     [
         // Type 1 questions
-        new AssessmentQuestion(EnneagramType.Type1, "I often feel dissatisfied when things aren't done the 'right' way"),
-        new AssessmentQuestion(EnneagramType.Type1, "I find it hard to accept obvious mistakes in myself or others"),
-        new AssessmentQuestion(EnneagramType.Type1, "I unconsciously set behavioral standards for myself and others and expect compliance"),
-        new AssessmentQuestion(EnneagramType.Type1, "I easily feel angry about 'irresponsible' or 'perfunctory' behavior"),
-        new AssessmentQuestion(EnneagramType.Type1, "I often reflect on whether I've made the 'right' choices"),
-        new AssessmentQuestion(EnneagramType.Type1, "I have little tolerance for chaos and disorder"),
-        new AssessmentQuestion(EnneagramType.Type1, "I tend to judge things using 'should/shouldn't'"),
-        new AssessmentQuestion(EnneagramType.Type1, "I fear my actions might violate morals or principles"),
+        new(EnneagramType.Type1, "I often feel dissatisfied when things aren't done the 'right' way"),
+        new(EnneagramType.Type1, "I find it hard to accept obvious mistakes in myself or others"),
+        new(EnneagramType.Type1, "I unconsciously set behavioral standards for myself and others and expect compliance"),
+        new(EnneagramType.Type1, "I easily feel angry about 'irresponsible' or 'perfunctory' behavior"),
+        new(EnneagramType.Type1, "I often reflect on whether I've made the 'right' choices"),
+        new(EnneagramType.Type1, "I have little tolerance for chaos and disorder"),
+        new(EnneagramType.Type1, "I tend to judge things using 'should/shouldn't'"),
+        new(EnneagramType.Type1, "I fear my actions might violate morals or principles"),
         
         // Type 2 questions
-        new AssessmentQuestion(EnneagramType.Type2, "I prioritize others' needs, even neglecting my own"),
-        new AssessmentQuestion(EnneagramType.Type2, "I fear being seen as 'selfish' or 'unhelpful' by others"),
-        new AssessmentQuestion(EnneagramType.Type2, "I gain recognition and affection by helping others"),
-        new AssessmentQuestion(EnneagramType.Type2, "I find it hard to directly express my true needs"),
-        new AssessmentQuestion(EnneagramType.Type2, "I remember others' preferences and actively satisfy them"),
-        new AssessmentQuestion(EnneagramType.Type2, "I fear being 'useless' to others"),
-        new AssessmentQuestion(EnneagramType.Type2, "I easily fall into a pattern of 'giving-expecting something in return'"),
-        new AssessmentQuestion(EnneagramType.Type2, "I unconsciously cater to others' emotions and preferences"),
+        new(EnneagramType.Type2, "I prioritize others' needs, even neglecting my own"),
+        new(EnneagramType.Type2, "I fear being seen as 'selfish' or 'unhelpful' by others"),
+        new(EnneagramType.Type2, "I gain recognition and affection by helping others"),
+        new(EnneagramType.Type2, "I find it hard to directly express my true needs"),
+        new(EnneagramType.Type2, "I remember others' preferences and actively satisfy them"),
+        new(EnneagramType.Type2, "I fear being 'useless' to others"),
+        new(EnneagramType.Type2, "I easily fall into a pattern of 'giving-expecting something in return'"),
+        new(EnneagramType.Type2, "I unconsciously cater to others' emotions and preferences"),
         
         // Type 3 questions
-        new AssessmentQuestion(EnneagramType.Type3, "I'm very concerned about my 'successful' image in others' eyes"),
-        new AssessmentQuestion(EnneagramType.Type3, "I fear my efforts won't be recognized or rewarded"),
-        new AssessmentQuestion(EnneagramType.Type3, "I adjust my behavior to achieve goals"),
-        new AssessmentQuestion(EnneagramType.Type3, "I find it hard to accept 'failure' results"),
-        new AssessmentQuestion(EnneagramType.Type3, "I'm always planning the next achievement goal"),
-        new AssessmentQuestion(EnneagramType.Type3, "I fear being 'accomplished nothing' or 'valueless'"),
-        new AssessmentQuestion(EnneagramType.Type3, "I tie my personal worth to achievements"),
-        new AssessmentQuestion(EnneagramType.Type3, "I deliberately showcase my strengths in social situations"),
+        new(EnneagramType.Type3, "I'm very concerned about my 'successful' image in others' eyes"),
+        new(EnneagramType.Type3, "I fear my efforts won't be recognized or rewarded"),
+        new(EnneagramType.Type3, "I adjust my behavior to achieve goals"),
+        new(EnneagramType.Type3, "I find it hard to accept 'failure' results"),
+        new(EnneagramType.Type3, "I'm always planning the next achievement goal"),
+        new(EnneagramType.Type3, "I fear being 'accomplished nothing' or 'valueless'"),
+        new(EnneagramType.Type3, "I tie my personal worth to achievements"),
+        new(EnneagramType.Type3, "I deliberately showcase my strengths in social situations"),
         
         // Type 4 questions
-        new AssessmentQuestion(EnneagramType.Type4, "I always feel different from others and crave a unique sense of existence"),
-        new AssessmentQuestion(EnneagramType.Type4, "I fear my life will be 'mediocre'"),
-        new AssessmentQuestion(EnneagramType.Type4, "I'm very sensitive to emotions and easily fall into deep thinking"),
-        new AssessmentQuestion(EnneagramType.Type4, "I often feel that my 'true self' isn't understood"),
-        new AssessmentQuestion(EnneagramType.Type4, "I'm attracted to artistic or unique things"),
-        new AssessmentQuestion(EnneagramType.Type4, "I fear being forgotten or becoming 'like everyone else'"),
-        new AssessmentQuestion(EnneagramType.Type4, "I repeatedly reflect on the beauty or regrets of the past"),
-        new AssessmentQuestion(EnneagramType.Type4, "I pursue deep emotional connections rather than superficial socializing"),
+        new(EnneagramType.Type4, "I always feel different from others and crave a unique sense of existence"),
+        new(EnneagramType.Type4, "I fear my life will be 'mediocre'"),
+        new(EnneagramType.Type4, "I'm very sensitive to emotions and easily fall into deep thinking"),
+        new(EnneagramType.Type4, "I often feel that my 'true self' isn't understood"),
+        new(EnneagramType.Type4, "I'm attracted to artistic or unique things"),
+        new(EnneagramType.Type4, "I fear being forgotten or becoming 'like everyone else'"),
+        new(EnneagramType.Type4, "I repeatedly reflect on the beauty or regrets of the past"),
+        new(EnneagramType.Type4, "I pursue deep emotional connections rather than superficial socializing"),
         
         // Type 5 questions
-        new AssessmentQuestion(EnneagramType.Type5, "I need a lot of alone time to organize my thoughts and recharge"),
-        new AssessmentQuestion(EnneagramType.Type5, "I fear appearing ignorant due to insufficient knowledge"),
-        new AssessmentQuestion(EnneagramType.Type5, "I actively learn various knowledge to deal with unknown situations"),
-        new AssessmentQuestion(EnneagramType.Type5, "I tend to do thorough research and analysis before acting"),
-        new AssessmentQuestion(EnneagramType.Type5, "I fear my personal space being excessively occupied"),
-        new AssessmentQuestion(EnneagramType.Type5, "I deliberately reserve energy to avoid unnecessary consumption"),
-        new AssessmentQuestion(EnneagramType.Type5, "I have a strong desire to explore abstract concepts and theories"),
-        new AssessmentQuestion(EnneagramType.Type5, "I find it hard to accept 'making decisions based on feelings'"),
+        new(EnneagramType.Type5, "I need a lot of alone time to organize my thoughts and recharge"),
+        new(EnneagramType.Type5, "I fear appearing ignorant due to insufficient knowledge"),
+        new(EnneagramType.Type5, "I actively learn various knowledge to deal with unknown situations"),
+        new(EnneagramType.Type5, "I tend to do thorough research and analysis before acting"),
+        new(EnneagramType.Type5, "I fear my personal space being excessively occupied"),
+        new(EnneagramType.Type5, "I deliberately reserve energy to avoid unnecessary consumption"),
+        new(EnneagramType.Type5, "I have a strong desire to explore abstract concepts and theories"),
+        new(EnneagramType.Type5, "I find it hard to accept 'making decisions based on feelings'"),
         
         // Type 6 questions
-        new AssessmentQuestion(EnneagramType.Type6, "I anticipate various risks in advance and prepare responses"),
-        new AssessmentQuestion(EnneagramType.Type6, "I fear uncertain futures and sudden changes"),
-        new AssessmentQuestion(EnneagramType.Type6, "I rely on trusted people or rules to gain a sense of security"),
-        new AssessmentQuestion(EnneagramType.Type6, "I easily doubt others' intentions"),
-        new AssessmentQuestion(EnneagramType.Type6, "I fear being betrayed or abandoned"),
-        new AssessmentQuestion(EnneagramType.Type6, "I repeatedly confirm the feasibility and safety of plans"),
-        new AssessmentQuestion(EnneagramType.Type6, "I both rely on and remain vigilant towards authority"),
-        new AssessmentQuestion(EnneagramType.Type6, "Under pressure, I become anxious and seek definite answers"),
+        new(EnneagramType.Type6, "I anticipate various risks in advance and prepare responses"),
+        new(EnneagramType.Type6, "I fear uncertain futures and sudden changes"),
+        new(EnneagramType.Type6, "I rely on trusted people or rules to gain a sense of security"),
+        new(EnneagramType.Type6, "I easily doubt others' intentions"),
+        new(EnneagramType.Type6, "I fear being betrayed or abandoned"),
+        new(EnneagramType.Type6, "I repeatedly confirm the feasibility and safety of plans"),
+        new(EnneagramType.Type6, "I both rely on and remain vigilant towards authority"),
+        new(EnneagramType.Type6, "Under pressure, I become anxious and seek definite answers"),
         
         // Type 7 questions
-        new AssessmentQuestion(EnneagramType.Type7, "I'm always looking for new pleasures and experiences, hating monotony"),
-        new AssessmentQuestion(EnneagramType.Type7, "I fear falling into painful or boring states"),
-        new AssessmentQuestion(EnneagramType.Type7, "I plan multiple interesting things at once, unwilling to miss any"),
-        new AssessmentQuestion(EnneagramType.Type7, "I tend to avoid negative emotions by turning to positive things"),
-        new AssessmentQuestion(EnneagramType.Type7, "I fear losing freedom or the right to choose"),
-        new AssessmentQuestion(EnneagramType.Type7, "I look forward to the future and enjoy imagining various possibilities"),
-        new AssessmentQuestion(EnneagramType.Type7, "I find it hard to focus on a boring task for a long time"),
-        new AssessmentQuestion(EnneagramType.Type7, "I use an optimistic attitude to mask inner anxiety"),
+        new(EnneagramType.Type7, "I'm always looking for new pleasures and experiences, hating monotony"),
+        new(EnneagramType.Type7, "I fear falling into painful or boring states"),
+        new(EnneagramType.Type7, "I plan multiple interesting things at once, unwilling to miss any"),
+        new(EnneagramType.Type7, "I tend to avoid negative emotions by turning to positive things"),
+        new(EnneagramType.Type7, "I fear losing freedom or the right to choose"),
+        new(EnneagramType.Type7, "I look forward to the future and enjoy imagining various possibilities"),
+        new(EnneagramType.Type7, "I find it hard to focus on a boring task for a long time"),
+        new(EnneagramType.Type7, "I use an optimistic attitude to mask inner anxiety"),
         
         // Type 8 questions
-        new AssessmentQuestion(EnneagramType.Type8, "I like to be in control and don't want to be dominated by others"),
-        new AssessmentQuestion(EnneagramType.Type8, "I fear becoming vulnerable and being harmed by others"),
-        new AssessmentQuestion(EnneagramType.Type8, "I actively protect people or things I care about"),
-        new AssessmentQuestion(EnneagramType.Type8, "I find it hard to show weakness, even when hurt inside"),
-        new AssessmentQuestion(EnneagramType.Type8, "I fear injustice and will fight for rights for myself and others"),
-        new AssessmentQuestion(EnneagramType.Type8, "I have a strong resistance to being 'controlled'"),
-        new AssessmentQuestion(EnneagramType.Type8, "I speak directly and don't like to beat around the bush"),
-        new AssessmentQuestion(EnneagramType.Type8, "I use a strong attitude to mask inner unease"),
+        new(EnneagramType.Type8, "I like to be in control and don't want to be dominated by others"),
+        new(EnneagramType.Type8, "I fear becoming vulnerable and being harmed by others"),
+        new(EnneagramType.Type8, "I actively protect people or things I care about"),
+        new(EnneagramType.Type8, "I find it hard to show weakness, even when hurt inside"),
+        new(EnneagramType.Type8, "I fear injustice and will fight for rights for myself and others"),
+        new(EnneagramType.Type8, "I have a strong resistance to being 'controlled'"),
+        new(EnneagramType.Type8, "I speak directly and don't like to beat around the bush"),
+        new(EnneagramType.Type8, "I use a strong attitude to mask inner unease"),
         
         // Type 9 questions
-        new AssessmentQuestion(EnneagramType.Type9, "I try to avoid conflict and hope to maintain harmonious relationships"),
-        new AssessmentQuestion(EnneagramType.Type9, "I fear disagreements with others leading to separation"),
-        new AssessmentQuestion(EnneagramType.Type9, "I easily ignore my own needs and cater to others' expectations"),
-        new AssessmentQuestion(EnneagramType.Type9, "I like stable life and hate dramatic changes"),
-        new AssessmentQuestion(EnneagramType.Type9, "I procrastinate making decisions to avoid conflicts from choices"),
-        new AssessmentQuestion(EnneagramType.Type9, "I fear my opinions will cause dissatisfaction in others"),
-        new AssessmentQuestion(EnneagramType.Type9, "I'm good at listening and reconciling others' conflicts"),
-        new AssessmentQuestion(EnneagramType.Type9, "I escape pressure by immersing myself in familiar things")
+        new(EnneagramType.Type9, "I try to avoid conflict and hope to maintain harmonious relationships"),
+        new(EnneagramType.Type9, "I fear disagreements with others leading to separation"),
+        new(EnneagramType.Type9, "I easily ignore my own needs and cater to others' expectations"),
+        new(EnneagramType.Type9, "I like stable life and hate dramatic changes"),
+        new(EnneagramType.Type9, "I procrastinate making decisions to avoid conflicts from choices"),
+        new(EnneagramType.Type9, "I fear my opinions will cause dissatisfaction in others"),
+        new(EnneagramType.Type9, "I'm good at listening and reconciling others' conflicts"),
+        new(EnneagramType.Type9, "I escape pressure by immersing myself in familiar things")
     ];
 
     /// <summary>
@@ -214,7 +214,7 @@ file static class Assessment
     /// <summary>
     /// Assessment question entity record
     /// </summary>
-    private record AssessmentQuestion(EnneagramType BelongingType, string QuestionText);
+    private record Question(EnneagramType BelongingType, string QuestionText);
 
     /// <summary>
     /// Program entry point
