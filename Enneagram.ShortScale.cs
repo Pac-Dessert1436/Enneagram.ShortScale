@@ -1,4 +1,12 @@
-﻿namespace Enneagram.ShortScale;
+﻿/*
+ *  DISCLAIMER: This project is a personal learning exercise.
+ *  The assessment items are generated for demonstration purposes.
+ *  For important disclaimers, licenses, and source attributions,
+ *  please refer to the README.md file in the root repository.
+ *  
+ *  This code is licensed under the MIT License.
+ */
+namespace Enneagram.ShortScale;
 
 /// <summary>
 /// Core module for RHETI-style Enneagram assessment (short version), based on Riso-Hudson 

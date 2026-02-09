@@ -1,7 +1,24 @@
 # Enneagram Short Scale (C# 14 & .NET 10)
 
+## Important Disclaimer: Unofficial & Non-Professional Tool
+This repository is:
+- a **personal learning and programming exercise**, primarily aimed at implementing the logic of personality assessment through code.
+- an **unofficial** implementation of a short-scale version. It is **not affiliated with, endorsed by, or connected to** any commercial psychological assessment company or copyright holder of the official Enneagram tests.
+- a **non-professional** psychological tool. The reliability and validity of this scale **have NOT been scientifically validated**.
+
+*__The results are for personal entertainment, self-reflection, and educational discussion only. They MUST NOT be used for formal psychological evaluation, career guidance, clinical diagnosis, or any high-stakes decision-making. BY USING THIS SOFTWARE, YOU ACKNOWLEDGE AND AGREE TO THESE TERMS.__*
+
+## Source of Assessment Items
+The personality assessment items (questions) used in this project were AI-assisted, based on a personal understanding of the Enneagram of Personality. _Item generation process may have inadvertently drawn inspiration from or paraphrased descriptions commonly found online, in books, and within the broader psychological community. It is challenging to trace a definitive, copyright-free origin for each item due to the widespread dissemination of these theories._
+
+*__If any item in this repository is identified as infringing upon your copyright, please contact me immediately via [GitHub Issues](https://github.com/yourusername/Enneagram.ShortScale/issues) or [benjamin_2001@qq.com](mailto:benjamin_2001@qq.com). I will promptly investigate and remove or properly attribute the content in question.__*
+
 ## Description
-This project implements a **RHETI-style Enneagram assessment** (short scale version) using C# 14 and .NET 10. It is designed as a lightweight, self-contained console application for exploring the Enneagram Type System - a personality framework that categorizes individuals into 9 distinct core types, each defined by unique core motivations, fears, and behavioral patterns.
+This project implements a **RHETI-style Enneagram assessment** (short scale version) using C# 14 and .NET 10. It is designed as a lightweight, self-contained console application for exploring the Enneagram Type System - a personality framework that categorizes individuals into 9 distinct core types, each defined by unique core motivations, fears, and behavioral patterns. *__Nevertheless, there are a few key points you should be aware of:__*
+
+- **Non-Official Tool**: This is a RHETI-style simulation, not the official Riso-Hudson RHETI assessment. Results are for self-exploration only, not professional psychological diagnosis or commercial use.
+- **Accuracy**: The assessment's value depends on honest self-reflection. Answer questions based on your true feelings, not how you "should" behave.
+- **Personality Fluidity**: Enneagram types reflect core patterns, not fixed labels. Your scores may shift based on life circumstances and personal growth.
 
 ### Key Features
 - **RHETI-Aligned Logic**: Follows the core principles of the Riso-Hudson Enneagram Type Indicator (RHETI) - focusing on core motivations/fears (not surface-level behaviors) for accurate type assessment.
@@ -56,11 +73,6 @@ The adjacent type with the next-highest score (influences your core type’s exp
 [WING TYPE] Type 5 (Investigator/Observer)
     Note: Wing types influence the expression of core types, making personality more complex
 ```
-
-## Important Notes
-- **Non-Official Tool**: This is a RHETI-style simulation, not the official Riso-Hudson RHETI assessment. *__Results are for self-exploration only, not professional psychological diagnosis or commercial use.__*
-- **Accuracy**: The assessment’s value depends on honest self-reflection. Answer questions based on your true feelings, not how you "should" behave.
-- **Personality Fluidity**: Enneagram types reflect core patterns, not fixed labels. Your scores may shift based on life circumstances and personal growth.
 
 ## Acknowledgments
 - Based on the Enneagram Type System developed by Don Richard Riso and Russ Hudson.
