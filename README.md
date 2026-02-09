@@ -9,9 +9,9 @@ This repository is:
 *__The results are for personal entertainment, self-reflection, and educational discussion only. They MUST NOT be used for formal psychological evaluation, career guidance, clinical diagnosis, or any high-stakes decision-making. BY USING THIS SOFTWARE, YOU ACKNOWLEDGE AND AGREE TO THESE TERMS.__*
 
 ## Source of Assessment Items
-The personality assessment items (questions) used in this project were AI-assisted, based on a personal understanding of the Enneagram of Personality. _Item generation process may have inadvertently drawn inspiration from or paraphrased descriptions commonly found online, in books, and within the broader psychological community. It is challenging to trace a definitive, copyright-free origin for each item due to the widespread dissemination of these theories._
+The personality assessment items (questions) used in this project were AI-assisted, based on a personal understanding of the Enneagram of Personality. _Content generation process are based on publicly available descriptions of the Enneagram framework **without direct replication of copyrighted items**, which are commonly found online, in books, and within the broader psychological community. It is challenging to trace a definitive, copyright-free origin for each item due to the widespread dissemination of the Enneagram theory._
 
-*__If any item in this repository is identified as infringing upon your copyright, please contact me immediately via [GitHub Issues](https://github.com/yourusername/Enneagram.ShortScale/issues) or [benjamin_2001@qq.com](mailto:benjamin_2001@qq.com). I will promptly investigate and remove or properly attribute the content in question.__*
+*__If any content in this repository is determined to be inconsistent with copyright guidelines, please contact me immediately via [GitHub Issues](https://github.com/yourusername/Enneagram.ShortScale/issues) or [benjamin_2001@qq.com](mailto:benjamin_2001@qq.com). I will promptly investigate and remove or properly attribute the content in question.__*
 
 ## Description
 This project implements a **RHETI-style Enneagram assessment** (short scale version) using C# 14 and .NET 10. It is designed as a lightweight, self-contained console application for exploring the Enneagram Type System - a personality framework that categorizes individuals into 9 distinct core types, each defined by unique core motivations, fears, and behavioral patterns. *__Nevertheless, there are a few key points you should be aware of:__*
@@ -81,3 +81,4 @@ The adjacent type with the next-highest score (influences your core type’s exp
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
